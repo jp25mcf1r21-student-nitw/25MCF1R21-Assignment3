@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.university-name {
+  font-size: 1.8em;
+}
+
+nav {
+  margin-top: 15px;
+  background-color: #002244;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3aa520;
+}
+
+
+main {
+  padding: 40px 0;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcome h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.welcome p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+

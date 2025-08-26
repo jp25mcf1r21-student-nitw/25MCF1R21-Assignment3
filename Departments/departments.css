@@ -1,0 +1,102 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+header {
+  background-color: #006605;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.university-name {
+  font-size: 1.8em;
+}
+
+
+nav {
+  margin-top: 15px;
+  background-color: #319e27;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ff4c;
+}
+
+
+main {
+  padding: 40px 0;
+}
+
+.departments h2 {
+  text-align: center;
+  color: #096d06;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.department-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.department-card {
+  background-color: #ffffff;
+  border: 2px solid #ce121b;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #006616;
+  font-weight: bold;
+  
+}
+
+
+
+
