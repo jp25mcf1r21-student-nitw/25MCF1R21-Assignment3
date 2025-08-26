@@ -1,0 +1,132 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Registration Page&lt;/title&gt;
+    &lt;style&gt;
+        *{
+            margin: 0.5rem;
+            padding: 3px;
+        }
+        body{
+            background-color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+      align-items: center;
+      justify-content: center;
+        }
+    h2{
+        background-color: rgb(155, 150, 230);
+        color: black;
+        align-items:center;
+        justify-content: center;
+    }
+    h3{
+        background-color: rgb(155, 150, 230);
+    }
+    .registration-box{
+      background-color:#c7c5e9;
+      font-family:Verdana, Geneva, Tahoma, sans-serif ;
+      padding: 40px;
+      border-radius: 0px;
+      /* width: 1000px; */
+    }
+    input[type=&quot;first name&quot;],input[type=&quot;middle name&quot;],input[type=&quot;last name&quot;]
+    {
+        width: auto;
+    }
+    input[type=&quot;text&quot;]
+    {
+        width: auto;
+
+    }
+    input[type=&quot;address&quot;]
+    {
+        width: 100%;
+        padding: 8px;
+    }
+    label,input {
+        display: inline-block;
+        width: 15rem;
+    }
+    button.hover
+    {
+        background-color: grey;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        display:inline-block;
+        width:rem;
+       
+     }
+   
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;registration-box&quot;&gt;
+        &lt;h2&gt;STUDENT REGISTRATION FORM&lt;/h2&gt;
+        &lt;h3&gt;Basic Information&lt;/h3&gt;
+        &lt;form&gt;
+          &lt;label for=&quot;first name&quot;&gt;First Name*&lt;/label&gt;
+          &lt;input type=&quot;first name&quot; id=&quot;first name&quot; name=&quot;first Name&quot; required&gt;
+   
+          &lt;label for=&quot;middlename&quot;&gt;Middle Name&lt;/label&gt;
+          &lt;input type=&quot;middlename&quot; id=&quot;middle name&quot; name=&quot;middle name&quot;
+required&gt;
+          &lt;label for=&quot;last name&quot;&gt;Last name&lt;/label&gt;
+          &lt;input type=&quot;last name&quot; id=&quot;last name&quot; name=&quot;last name&quot;
+required&gt;&lt;br&gt;
+          &lt;label for=&quot;roll no&quot;&gt;Roll No.&lt;/label&gt;
+          &lt;input type=&quot;text&quot; name=&quot;roll no&quot; id=&quot;roll no&quot;&gt;&lt;br&gt;
+          &lt;label for=&quot;email&quot;&gt;Email ID&lt;/label&gt;
+         &lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;email&quot;&gt;&lt;br&gt;
+         &lt;label for=&quot;user&quot;&gt;User ID&lt;/label&gt;
+         &lt;input type=&quot;text&quot; name=&quot;user&quot; id=&quot;user&quot;&gt;&lt;br&gt;
+
+         &lt;label for=&quot;password&quot;&gt;Enter Password&lt;/label&gt;
+         &lt;input type=&quot;text&quot; name=&quot;password&quot; id=&quot;password&quot;&gt;&lt;br&gt;
+         &lt;label for=&quot;repassword&quot;&gt;Re-Enter Password&lt;/label&gt;
+         &lt;input type=&quot;text&quot; name=&quot;repassword&quot; id=&quot;repassword&quot;&gt;&lt;br&gt;
+         
+            &lt;label for=&quot;branch&quot;&gt;Branch:&lt;/label&gt;
+         &lt;select name=&quot;branch&quot; id=&quot;Branch&quot;&gt;Branch
+            &lt;option value=&quot;cds&quot;&gt;Computational and Data Science&lt;/option&gt;
+            &lt;option value=&quot;Electrical&quot;&gt;Electrical&lt;/option&gt;
+            &lt;option value=&quot;Civil&quot;&gt;Civil Enginerring&lt;/option&gt;
+         &lt;/select&gt;&lt;br&gt;
+       
+         
+         &lt;label for=&quot;repassword&quot;&gt;Upload Photo&lt;/label&gt;
+         &lt;input type=&quot;file&quot; name=&quot;repassword&quot; id=&quot;repassword&quot;&gt;&lt;br&gt;
+         
+         &lt;label for=&quot;repassword&quot;&gt;Phone No.&lt;/label&gt;
+         &lt;input type=&quot;number&quot; name=&quot;repassword&quot; id=&quot;repassword&quot;&gt;&lt;br&gt;
+       
+        &lt;h3&gt;Personal Details&lt;/h3&gt;
+         &lt;label for=&quot;fname&quot;&gt;Father&#39;s Name&lt;/label&gt;
+         &lt;input type=&quot;text&quot; name=&quot;fname&quot; id=&quot;fname&quot;&gt;
+         &lt;label for=&quot;contact&quot;&gt;Contact No.&lt;/label&gt;
+         &lt;input type=&quot;number&quot; name=&quot;contact&quot; id=&quot;contact&quot;&gt;&lt;br&gt;
+         &lt;label for=&quot;fname&quot;&gt;Mother&#39;s Name&lt;/label&gt;
+         &lt;input type=&quot;text&quot; name=&quot;fname&quot; id=&quot;fname&quot;&gt;
+         &lt;label for=&quot;contact&quot;&gt;Contact No.&lt;/label&gt;
+         &lt;input type=&quot;number&quot; name=&quot;contact&quot; id=&quot;contact&quot;&gt;&lt;br&gt;
+         &lt;label for=&quot;dob&quot;&gt;Date of Birth&lt;/label&gt;
+         &lt;input type=&quot;date&quot; name=&quot;dob&quot; id=&quot;dob&quot;&gt;
+         &lt;label for=&quot;adhaar&quot;&gt;Adhaar No.&lt;/label&gt;
+         &lt;input type=&quot;number&quot; name=&quot;adhaar&quot; id=&quot;adhaar&quot;&gt;
+         &lt;h3&gt;Address&lt;/h3&gt;
+         &lt;label for=&quot;address&quot;&gt;Address 1&lt;/label&gt;
+         &lt;input type=&quot;address&quot; name=&quot;address&quot; id=&quot;address&quot;&gt;
+         &lt;label for=&quot;address&quot;&gt;Address 2&lt;/label&gt;
+         &lt;input type=&quot;address&quot; name=&quot;address&quot; id=&quot;address&quot;&gt;
+           
+         
+          &lt;button type=&quot;submit&quot;&gt;Register&lt;/button&gt;
+
+          &lt;button type=&quot;reset&quot;&gt;Reset&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
