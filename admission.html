@@ -1,132 +1,140 @@
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Registration Page&lt;/title&gt;
-    &lt;style&gt;
-        *{
-            margin: 0.5rem;
-            padding: 3px;
-        }
-        body{
-            background-color: white;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            display: flex;
-      align-items: center;
-      justify-content: center;
-        }
-    h2{
-        background-color: rgb(155, 150, 230);
-        color: black;
-        align-items:center;
-        justify-content: center;
-    }
-    h3{
-        background-color: rgb(155, 150, 230);
-    }
-    .registration-box{
-      background-color:#c7c5e9;
-      font-family:Verdana, Geneva, Tahoma, sans-serif ;
-      padding: 40px;
-      border-radius: 0px;
-      /* width: 1000px; */
-    }
-    input[type=&quot;first name&quot;],input[type=&quot;middle name&quot;],input[type=&quot;last name&quot;]
-    {
-        width: auto;
-    }
-    input[type=&quot;text&quot;]
-    {
-        width: auto;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    h2, h3 {
+      background-color: rgb(155, 150, 230);
+      color: black;
+      padding: 8px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    .registration-box {
+      background-color: #c7c5e9;
+      padding: 30px;
+      border-radius: 8px;
+      width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: inline-block;
+      width: 180px;
+      margin-bottom: 8px;
+    }
+    form input, form select {
+      width: calc(100% - 200px);
+      padding: 6px;
+      margin-bottom: 10px;
+      border: 1px solid #888;
+      border-radius: 4px;
+    }
+    form input[type="file"] {
+      border: none;
+    }
+    .form-buttons {
+      text-align: center;
+      margin-top: 15px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: rgb(155, 150, 230);
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: grey;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="registration-box">
+    <h2>STUDENT REGISTRATION FORM</h2>
 
-    }
-    input[type=&quot;address&quot;]
-    {
-        width: 100%;
-        padding: 8px;
-    }
-    label,input {
-        display: inline-block;
-        width: 15rem;
-    }
-    button.hover
-    {
-        background-color: grey;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bold;
-        display:inline-block;
-        width:rem;
-       
-     }
-   
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class=&quot;registration-box&quot;&gt;
-        &lt;h2&gt;STUDENT REGISTRATION FORM&lt;/h2&gt;
-        &lt;h3&gt;Basic Information&lt;/h3&gt;
-        &lt;form&gt;
-          &lt;label for=&quot;first name&quot;&gt;First Name*&lt;/label&gt;
-          &lt;input type=&quot;first name&quot; id=&quot;first name&quot; name=&quot;first Name&quot; required&gt;
-   
-          &lt;label for=&quot;middlename&quot;&gt;Middle Name&lt;/label&gt;
-          &lt;input type=&quot;middlename&quot; id=&quot;middle name&quot; name=&quot;middle name&quot;
-required&gt;
-          &lt;label for=&quot;last name&quot;&gt;Last name&lt;/label&gt;
-          &lt;input type=&quot;last name&quot; id=&quot;last name&quot; name=&quot;last name&quot;
-required&gt;&lt;br&gt;
-          &lt;label for=&quot;roll no&quot;&gt;Roll No.&lt;/label&gt;
-          &lt;input type=&quot;text&quot; name=&quot;roll no&quot; id=&quot;roll no&quot;&gt;&lt;br&gt;
-          &lt;label for=&quot;email&quot;&gt;Email ID&lt;/label&gt;
-         &lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;email&quot;&gt;&lt;br&gt;
-         &lt;label for=&quot;user&quot;&gt;User ID&lt;/label&gt;
-         &lt;input type=&quot;text&quot; name=&quot;user&quot; id=&quot;user&quot;&gt;&lt;br&gt;
+    <h3>Basic Information</h3>
+    <form>
+      <label for="first-name">First Name*</label>
+      <input type="text" id="first-name" name="firstName" required><br>
 
-         &lt;label for=&quot;password&quot;&gt;Enter Password&lt;/label&gt;
-         &lt;input type=&quot;text&quot; name=&quot;password&quot; id=&quot;password&quot;&gt;&lt;br&gt;
-         &lt;label for=&quot;repassword&quot;&gt;Re-Enter Password&lt;/label&gt;
-         &lt;input type=&quot;text&quot; name=&quot;repassword&quot; id=&quot;repassword&quot;&gt;&lt;br&gt;
-         
-            &lt;label for=&quot;branch&quot;&gt;Branch:&lt;/label&gt;
-         &lt;select name=&quot;branch&quot; id=&quot;Branch&quot;&gt;Branch
-            &lt;option value=&quot;cds&quot;&gt;Computational and Data Science&lt;/option&gt;
-            &lt;option value=&quot;Electrical&quot;&gt;Electrical&lt;/option&gt;
-            &lt;option value=&quot;Civil&quot;&gt;Civil Enginerring&lt;/option&gt;
-         &lt;/select&gt;&lt;br&gt;
-       
-         
-         &lt;label for=&quot;repassword&quot;&gt;Upload Photo&lt;/label&gt;
-         &lt;input type=&quot;file&quot; name=&quot;repassword&quot; id=&quot;repassword&quot;&gt;&lt;br&gt;
-         
-         &lt;label for=&quot;repassword&quot;&gt;Phone No.&lt;/label&gt;
-         &lt;input type=&quot;number&quot; name=&quot;repassword&quot; id=&quot;repassword&quot;&gt;&lt;br&gt;
-       
-        &lt;h3&gt;Personal Details&lt;/h3&gt;
-         &lt;label for=&quot;fname&quot;&gt;Father&#39;s Name&lt;/label&gt;
-         &lt;input type=&quot;text&quot; name=&quot;fname&quot; id=&quot;fname&quot;&gt;
-         &lt;label for=&quot;contact&quot;&gt;Contact No.&lt;/label&gt;
-         &lt;input type=&quot;number&quot; name=&quot;contact&quot; id=&quot;contact&quot;&gt;&lt;br&gt;
-         &lt;label for=&quot;fname&quot;&gt;Mother&#39;s Name&lt;/label&gt;
-         &lt;input type=&quot;text&quot; name=&quot;fname&quot; id=&quot;fname&quot;&gt;
-         &lt;label for=&quot;contact&quot;&gt;Contact No.&lt;/label&gt;
-         &lt;input type=&quot;number&quot; name=&quot;contact&quot; id=&quot;contact&quot;&gt;&lt;br&gt;
-         &lt;label for=&quot;dob&quot;&gt;Date of Birth&lt;/label&gt;
-         &lt;input type=&quot;date&quot; name=&quot;dob&quot; id=&quot;dob&quot;&gt;
-         &lt;label for=&quot;adhaar&quot;&gt;Adhaar No.&lt;/label&gt;
-         &lt;input type=&quot;number&quot; name=&quot;adhaar&quot; id=&quot;adhaar&quot;&gt;
-         &lt;h3&gt;Address&lt;/h3&gt;
-         &lt;label for=&quot;address&quot;&gt;Address 1&lt;/label&gt;
-         &lt;input type=&quot;address&quot; name=&quot;address&quot; id=&quot;address&quot;&gt;
-         &lt;label for=&quot;address&quot;&gt;Address 2&lt;/label&gt;
-         &lt;input type=&quot;address&quot; name=&quot;address&quot; id=&quot;address&quot;&gt;
-           
-         
-          &lt;button type=&quot;submit&quot;&gt;Register&lt;/button&gt;
+      <label for="middle-name">Middle Name</label>
+      <input type="text" id="middle-name" name="middleName"><br>
 
-          &lt;button type=&quot;reset&quot;&gt;Reset&lt;/button&gt;
-        &lt;/form&gt;
-      &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+      <label for="last-name">Last Name*</label>
+      <input type="text" id="last-name" name="lastName" required><br>
+
+      <label for="roll-no">Roll No.</label>
+      <input type="text" id="roll-no" name="rollNo"><br>
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="user">User ID</label>
+      <input type="text" id="user" name="user"><br>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password"><br>
+
+      <label for="repassword">Re-enter Password</label>
+      <input type="password" id="repassword" name="repassword"><br>
+
+      <label for="branch">Branch</label>
+      <select name="branch" id="branch">
+        <option value="cds">Computational and Data Science</option>
+        <option value="electrical">Electrical</option>
+        <option value="civil">Civil Engineering</option>
+      </select><br>
+
+      <label for="photo">Upload Photo</label>
+      <input type="file" id="photo" name="photo"><br>
+
+      <label for="phone">Phone No.</label>
+      <input type="tel" id="phone" name="phone"><br>
+
+      <h3>Personal Details</h3>
+      <label for="father-name">Father's Name</label>
+      <input type="text" id="father-name" name="fatherName"><br>
+
+      <label for="father-contact">Father's Contact</label>
+      <input type="tel" id="father-contact" name="fatherContact"><br>
+
+      <label for="mother-name">Mother's Name</label>
+      <input type="text" id="mother-name" name="motherName"><br>
+
+      <label for="mother-contact">Mother's Contact</label>
+      <input type="tel" id="mother-contact" name="motherContact"><br>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob"><br>
+
+      <label for="aadhaar">Aadhaar No.</label>
+      <input type="number" id="aadhaar" name="aadhaar"><br>
+
+      <h3>Address</h3>
+      <label for="address1">Address 1</label>
+      <input type="text" id="address1" name="address1"><br>
+
+      <label for="address2">Address 2</label>
+      <input type="text" id="address2" name="address2"><br>
+
+      <div class="form-buttons">
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
